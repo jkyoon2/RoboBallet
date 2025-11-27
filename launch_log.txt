@@ -1,0 +1,534 @@
+nohup: ignoring input
+I1127 21:22:32.502107 137355439097664 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA
+I1127 21:22:32.502721 137355439097664 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I1127 21:22:32.685184 137355439097664 run_locally.py:123] Launching in the same console since we cannot find gnome-terminal, tmux, or xterm.
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /home/juliecandoit98/miniconda3/envs/roboballet/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+[1;33m[evaluator/1] I1127 21:22:36.756545 140592112408384 evaluator.py:97] TensorBoard log dir: ./tensorboard_log[0;0m
+[1;33m[evaluator/1] I1127 21:22:39.322653 140592112408384 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;33m[evaluator/1] I1127 21:22:39.323438 140592112408384 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;33m[evaluator/1] I1127 21:22:39.329527 140592112408384 courier_utils.py:50] Binding: run[0;0m
+[1;33m[evaluator/1] I1127 21:22:39.330295 140592112408384 evaluator.py:147] Evaluator static_dist started[0;0m
+[1;33m[evaluator/1] 2025-11-27 21:23:32.966179: W external/tsl/tsl/framework/bfc_allocator.cc:485] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.0KiB (rounded to 2048)requested by op [0;0m
+[1;33m[evaluator/1] 2025-11-27 21:23:32.966284: W external/tsl/tsl/framework/bfc_allocator.cc:497] *******************************************************xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx[0;0m
+[1;33m[evaluator/1] Fatal Python error: Segmentation fault[0;0m
+[1;33m[evaluator/1] [0;0m
+[1;33m[evaluator/1] Current thread 0x00007fdd11bfc6c0 (most recent call first):[0;0m
+[1;33m[evaluator/1]   <no Python frame>[0;0m
+[1;33m[evaluator/1] [0;0m
+[1;33m[evaluator/1] Thread 0x00007fdd113fb6c0 (most recent call first):[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/selectors.py", line 416 in select[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/multiprocessing/connection.py", line 931 in wait[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/multiprocessing/connection.py", line 424 in _poll[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/multiprocessing/connection.py", line 257 in poll[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/multiprocessing/queues.py", line 113 in get[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/tensorboardX/event_file_writer.py", line 202 in run[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 1016 in _bootstrap_inner[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 973 in _bootstrap[0;0m
+[1;33m[evaluator/1] [0;0m
+[1;33m[evaluator/1] Thread 0x00007fde26eb1740 (most recent call first):[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 324 in wait[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/concurrent/futures/_base.py", line 453 in result[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/roboballet/agents/evaluator.py", line 126 in _update_network_variables[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/roboballet/agents/evaluator.py", line 150 in run[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/courier/node.py", line 130 in run[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/node.py", line 75 in _construct_function[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 121 in main[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 254 in _run_main[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 308 in run[0;0m
+[1;33m[evaluator/1]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 126 in <module>[0;0m
+[1;33m[evaluator/1] [0;0m
+[1;33m[evaluator/1] Extension modules: psutil._psutil_linux, psutil._psutil_posix, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, jaxlib.cpu_feature_guard, msgpack._cmsgpack, yaml._yaml, google.protobuf.pyext._message, tensorflow.python.framework.fast_tensor_util, charset_normalizer.md, requests.packages.charset_normalizer.md, requests.packages.chardet.md, h5py._errors, h5py.defs, h5py._objects, h5py.h5, h5py.utils, h5py.h5t, h5py.h5s, h5py.h5ac, h5py.h5p, h5py.h5r, h5py._proxy, h5py._conv, h5py.h5z, h5py.h5a, h5py.h5d, h5py.h5ds, h5py.h5g, h5py.h5i, h5py.h5o, h5py.h5f, h5py.h5fd, h5py.h5pl, h5py.h5l, h5py._selector, scipy._lib._ccallback_c, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._flinalg, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_sqrtm_triu, scipy.linalg.cython_blas, scipy.linalg._matfuncs_expm, scipy.linalg._decomp_update, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpack, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, scipy.ndimage._nd_image, scipy.special._ufuncs_cxx, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.special._ellip_harm_2, _ni_label, scipy.ndimage._ni_label, scipy.spatial._ckdtree, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._distance_wrap, scipy.spatial._hausdorff, scipy.spatial.transform._rotation (total: 86)[0;0m
+[1;36m[evaluator/0] I1127 21:22:36.781955 132312675485504 evaluator.py:97] TensorBoard log dir: ./tensorboard_log[0;0m
+[1;36m[evaluator/0] I1127 21:22:39.344374 132312675485504 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;36m[evaluator/0] I1127 21:22:39.345075 132312675485504 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;36m[evaluator/0] I1127 21:22:39.351180 132312675485504 courier_utils.py:50] Binding: run[0;0m
+[1;36m[evaluator/0] I1127 21:22:39.351927 132312675485504 evaluator.py:147] Evaluator training_dist started[0;0m
+[1;36m[evaluator/0] 2025-11-27 21:23:35.587846: W external/tsl/tsl/framework/bfc_allocator.cc:485] Allocator (GPU_0_bfc) ran out of memory trying to allocate 34.0KiB (rounded to 34816)requested by op [0;0m
+[1;36m[evaluator/0] 2025-11-27 21:23:35.587939: W external/tsl/tsl/framework/bfc_allocator.cc:497] <allocator contains no memory>[0;0m
+[1;36m[evaluator/0] Fatal Python error: Segmentation fault[0;0m
+[1;36m[evaluator/0] [0;0m
+[1;36m[evaluator/0] Current thread 0x0000785557fff6c0 (most recent call first):[0;0m
+[1;36m[evaluator/0]   <no Python frame>[0;0m
+[1;36m[evaluator/0] [0;0m
+[1;36m[evaluator/0] Thread 0x00007855577fe6c0 (most recent call first):[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/selectors.py", line 416 in select[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/multiprocessing/connection.py", line 931 in wait[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/multiprocessing/connection.py", line 424 in _poll[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/multiprocessing/connection.py", line 257 in poll[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/multiprocessing/queues.py", line 113 in get[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/tensorboardX/event_file_writer.py", line 202 in run[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 1016 in _bootstrap_inner[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 973 in _bootstrap[0;0m
+[1;36m[evaluator/0] [0;0m
+[1;36m[evaluator/0] Thread 0x0000785672058740 (most recent call first):[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 324 in wait[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/concurrent/futures/_base.py", line 453 in result[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/roboballet/agents/evaluator.py", line 126 in _update_network_variables[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/roboballet/agents/evaluator.py", line 150 in run[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/courier/node.py", line 130 in run[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/node.py", line 75 in _construct_function[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 121 in main[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 254 in _run_main[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 308 in run[0;0m
+[1;36m[evaluator/0]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 126 in <module>[0;0m
+[1;36m[evaluator/0] [0;0m
+[1;36m[evaluator/0] Extension modules: psutil._psutil_linux, psutil._psutil_posix, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, jaxlib.cpu_feature_guard, msgpack._cmsgpack, yaml._yaml, google.protobuf.pyext._message, tensorflow.python.framework.fast_tensor_util, charset_normalizer.md, requests.packages.charset_normalizer.md, requests.packages.chardet.md, h5py._errors, h5py.defs, h5py._objects, h5py.h5, h5py.utils, h5py.h5t, h5py.h5s, h5py.h5ac, h5py.h5p, h5py.h5r, h5py._proxy, h5py._conv, h5py.h5z, h5py.h5a, h5py.h5d, h5py.h5ds, h5py.h5g, h5py.h5i, h5py.h5o, h5py.h5f, h5py.h5fd, h5py.h5pl, h5py.h5l, h5py._selector, scipy._lib._ccallback_c, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._flinalg, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_sqrtm_triu, scipy.linalg.cython_blas, scipy.linalg._matfuncs_expm, scipy.linalg._decomp_update, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpack, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, scipy.ndimage._nd_image, scipy.special._ufuncs_cxx, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.special._ellip_harm_2, _ni_label, scipy.ndimage._ni_label, scipy.spatial._ckdtree, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._distance_wrap, scipy.spatial._hausdorff, scipy.spatial.transform._rotation (total: 86)[0;0m
+[1;35m[actor/7] I1127 21:22:36.744837 136177189287744 node.py:62] Reverb client connecting to: localhost:42935[0;0m
+[1;35m[actor/7] I1127 21:22:39.349698 136177189287744 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;35m[actor/7] I1127 21:22:39.350782 136177189287744 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;35m[actor/7] I1127 21:22:39.356663 136177189287744 courier_utils.py:50] Binding: run[0;0m
+[1;35m[actor/7] I1127 21:22:44.242821 136177189287744 actor.py:585] Actor 7 started[0;0m
+[1;35m[actor/7] 2025-11-27 21:23:55.753502: W external/tsl/tsl/framework/bfc_allocator.cc:485] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.0KiB (rounded to 1024)requested by op [0;0m
+[1;35m[actor/7] 2025-11-27 21:23:55.753742: W external/tsl/tsl/framework/bfc_allocator.cc:497] **************************************************************************************************xx[0;0m
+[1;35m[actor/7] Fatal Python error: Segmentation fault[0;0m
+[1;35m[actor/7] [0;0m
+[1;35m[actor/7] Current thread 0x00007bd91f7fe6c0 (most recent call first):[0;0m
+[1;35m[actor/7]   <no Python frame>[0;0m
+[1;35m[actor/7] [0;0m
+[1;35m[actor/7] Thread 0x00007bda38fe7740 (most recent call first):[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 324 in wait[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/concurrent/futures/_base.py", line 453 in result[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 559 in _fetch_network_variables[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 224 in run_episode[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 603 in run[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/courier/node.py", line 130 in run[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/node.py", line 75 in _construct_function[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 121 in main[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 254 in _run_main[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 308 in run[0;0m
+[1;35m[actor/7]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 126 in <module>[0;0m
+[1;35m[actor/7] [0;0m
+[1;35m[actor/7] Extension modules: psutil._psutil_linux, psutil._psutil_posix, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, google.protobuf.pyext._message, tensorflow.python.framework.fast_tensor_util, charset_normalizer.md, requests.packages.charset_normalizer.md, requests.packages.chardet.md, h5py._errors, h5py.defs, h5py._objects, h5py.h5, h5py.utils, h5py.h5t, h5py.h5s, h5py.h5ac, h5py.h5p, h5py.h5r, h5py._proxy, h5py._conv, h5py.h5z, h5py.h5a, h5py.h5d, h5py.h5ds, h5py.h5g, h5py.h5i, h5py.h5o, h5py.h5f, h5py.h5fd, h5py.h5pl, h5py.h5l, h5py._selector, scipy._lib._ccallback_c, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solv[1;36m[actor/3] I1127 21:22:36.647230 134439893649216 node.py:62] Reverb client connecting to: localhost:42935[0;0m
+[1;36m[actor/3] I1127 21:22:39.289210 134439893649216 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;36m[actor/3] I1127 21:22:39.290431 134439893649216 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;36m[actor/3] I1127 21:22:39.295947 134439893649216 courier_utils.py:50] Binding: run[0;0m
+[1;36m[actor/3] I1127 21:22:42.238005 134439893649216 actor.py:585] Actor 3 started[0;0m
+[1;36m[actor/3] 2025-11-27 21:23:57.541966: W external/tsl/tsl/framework/bfc_allocator.cc:485] Allocator (GPU_0_bfc) ran out of memory trying to allocate 34.0KiB (rounded to 34816)requested by op [0;0m
+[1;36m[actor/3] 2025-11-27 21:23:57.542149: W external/tsl/tsl/framework/bfc_allocator.cc:497] <allocator contains no memory>[0;0m
+[1;36m[actor/3] Fatal Python error: Segmentation fault[0;0m
+[1;36m[actor/3] [0;0m
+[1;36m[actor/3] Current thread 0x00007a44a50206c0 (most recent call first):[0;0m
+[1;36m[actor/3]   <no Python frame>[0;0m
+[1;36m[actor/3] [0;0m
+[1;36m[actor/3] Thread 0x00007a45ba1ac740 (most recent call first):[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 324 in wait[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/concurrent/futures/_base.py", line 453 in result[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 559 in _fetch_network_variables[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 224 in run_episode[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 603 in run[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/courier/node.py", line 130 in run[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/node.py", line 75 in _construct_function[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 121 in main[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 254 in _run_main[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 308 in run[0;0m
+[1;36m[actor/3]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 126 in <module>[0;0m
+[1;36m[actor/3] [0;0m
+[1;36m[actor/3] Extension modules: psutil._psutil_linux, psutil._psutil_posix, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, google.protobuf.pyext._message, tensorflow.python.framework.fast_tensor_util, charset_normalizer.md, requests.packages.charset_normalizer.md, requests.packages.chardet.md, h5py._errors, h5py.defs, h5py._objects, h5py.h5, h5py.utils, h5py.h5t, h5py.h5s, h5py.h5ac, h5py.h5p, h5py.h5r, h5py._proxy, h5py._conv, h5py.h5z, h5py.h5a, h5py.h5d, h5py.h5ds, h5py.h5g, h5py.h5i, h5py.h5o, h5py.h5f, h5py.h5fd, h5py.h5pl, h5py.h5l, h5py._selector, scipy._lib._ccallback_c, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._flinalg, scipy.linalg._decomp_lu_cython, se_toeplitz, scipy.linalg._flinalg, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_sqrtm_triu, scipy.linalg.cython_blas, scipy.linalg._matfuncs_expm, scipy.linalg._decomp_update, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpack, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, jaxlib.cpu_feature_guard, scipy.ndimage._nd_image, scipy.special._ufuncs_cxx, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.special._ellip_harm_2, _ni_label, scipy.ndimage._ni_label, msgpack._cmsgpack, yaml._yaml, scipy.spatial._ckdtree, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._distance_wrap, scipy.spatial._hausdorff, scipy.spatial.transform._rotation (total: 86)[0;0m
+[1;34m[actor/6] I1127 21:22:36.783262 126533599139648 node.py:62] Reverb client connecting to: localhost:42935[0;0m
+[1;34m[actor/6] I1127 21:22:39.356201 126533599139648 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;34m[actor/6] I1127 21:22:39.357187 126533599139648 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;34m[actor/6] I1127 21:22:39.364427 126533599139648 courier_utils.py:50] Binding: run[0;0m
+[1;34m[actor/6] I1127 21:22:42.703670 126533599139648 actor.py:585] Actor 6 started[0;0m
+[1;34m[actor/6] 2025-11-27 21:23:58.191335: W external/tsl/tsl/framework/bfc_allocator.cc:485] Allocator (GPU_0_bfc) ran out of memory trying to allocate 34.0KiB (rounded to 34816)requested by op [0;0m
+[1;34m[actor/6] 2025-11-27 21:23:58.191431: W external/tsl/tsl/framework/bfc_allocator.cc:497] <allocator contains no memory>[0;0m
+[1;34m[actor/6] Fatal Python error: Segmentation fault[0;0m
+[1;34m[actor/6] [0;0m
+[1;34m[actor/6] Current thread 0x00007313d10206c0 (most recent call first):[0;0m
+[1;34m[actor/6]   <no Python frame>[0;0m
+[1;34m[actor/6] [0;0m
+[1;34m[actor/6] Thread 0x00007314e63a9740 (most recent call first):[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 324 in wait[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/concurrent/futures/_base.py", line 453 in result[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 559 in _fetch_network_variables[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 224 in run_episode[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 603 in run[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/courier/node.py", line 130 in run[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/node.py", line 75 in _construct_function[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 121 in main[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 254 in _run_main[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 308 in run[0;0m
+[1;34m[actor/6]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 126 in <module>[0;0m
+[1;34m[actor/6] [0;0m
+[1;34m[actor/6] Extension modules: psutil._psutil_linux, psutil._psutil_posix, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, google.protobuf.pyext._message, tensorflow.python.framework.fast_tensor_util, charset_normalizer.md, requests.packages.charset_normalizer.md, requests.packages.chardet.md, h5py._errors, h5py.defs, h5py._objects, h5py.h5, h5py.utils, h5py.h5t, h5py.h5s, h5py.h5ac, h5py.h5p, h5py.h5r, h5py._proxy, h5py._conv, h5py.h5z, h5py.h5a, h5py.h5d, h5py.h5ds, h5py.h5g, h5py.h5i, h5py.h5o, h5py.h5f, h5py.h5fd, h5py.h5pl, h5py.h5l, h5py._selector, scipy._lib._ccallback_c, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._flinalg, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_sqrtm_triu, scipy.linalg.cython_blas, scipy.linalg._matfuncs_expm, scipy.linalg._decomp_update, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpack, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, jaxlib.cpu_feature_guard, scipy.ndimage._nd_image, scipy.special._ufuncs_cxx, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.special._ellip_harm_2, _ni_label, scipy.ndimage._ni_label, msgpack._cmsgpack, yaml._yaml, scipy.spatial._ckdtree, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._distance_wrap, scipy.spatial._hausdorff, scipy.spatial.transform._rotation (total: 86)[0;0m
+cipy.linalg._matfuncs_sqrtm_triu, scipy.linalg.cython_blas, scipy.linalg._matfuncs_expm, scipy.linalg._decomp_update, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpack, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, jaxlib.cpu_feature_guard, scipy.ndimage._nd_image, scipy.special._ufuncs_cxx, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.special._ellip_harm_2, _ni_label, scipy.ndimage._ni_label, msgpack._cmsgpack, yaml._yaml, scipy.spatial._ckdtree, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._distance_wrap, scipy.spatial._hausdorff, scipy.spatial.transform._rotation (total: 86)[0;0m
+[1;32m[actor/0] I1127 21:22:36.844107 137383785056064 node.py:62] Reverb client connecting to: localhost:42935[0;0m
+[1;32m[actor/0] I1127 21:22:39.359258 137383785056064 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;32m[actor/0] I1127 21:22:39.360469 137383785056064 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;32m[actor/0] I1127 21:22:39.368637 137383785056064 courier_utils.py:50] Binding: run[0;0m
+[1;32m[actor/0] I1127 21:22:44.378104 137383785056064 actor.py:585] Actor 0 started[0;0m
+[1;32m[actor/0] I1127 21:23:43.248055 137383785056064 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/0] I1127 21:23:49.999071 137383785056064 actor.py:658] Actor 0: Episode 1 done (random=1)[0;0m
+[1;32m[actor/0] I1127 21:23:49.999398 137383785056064 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;32m[actor/0]                 total_reward=-1.0,[0;0m
+[1;32m[actor/0]                 total_collision_penalty=1.0,[0;0m
+[1;32m[actor/0]                 total_collision_robot_steps=32,[0;0m
+[1;32m[actor/0]                 total_mean_acceleration=77.1012147903442,[0;0m
+[1;32m[actor/0]                 num_targets_done=0,[0;0m
+[1;32m[actor/0]                 episode_length=121,[0;0m
+[1;32m[actor/0]                 env_sampling_time_s=58.395531882,[0;0m
+[1;32m[actor/0]                 episode_wall_time_s=2.457605267,[0;0m
+[1;32m[actor/0]                 episode_write_wall_time_s=0.0,[0;0m
+[1;32m[actor/0]                 is_hindsight_replay=0,[0;0m
+[1;32m[actor/0]                 network_step=0)[0;0m
+[1;32m[actor/0] I1127 21:23:51.230121 137383785056064 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/0] I1127 21:23:58.618059 137383785056064 actor.py:658] Actor 0: Episode 2 done (random=1)[0;0m
+[1;32m[actor/0] I1127 21:23:58.618364 137383785056064 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;32m[actor/0]                 total_reward=-2.28125,[0;0m
+[1;32m[actor/0]                 total_collision_penalty=2.28125,[0;0m
+[1;32m[actor/0]                 total_collision_robot_steps=73,[0;0m
+[1;32m[actor/0]                 total_mean_acceleration=73.88650934696197,[0;0m
+[1;32m[actor/0]                 num_targets_done=0,[0;0m
+[1;32m[actor/0]                 episode_length=121,[0;0m
+[1;32m[actor/0]                 env_sampling_time_s=1.111167116,[0;0m
+[1;32m[actor/0]                 episode_wall_time_s=2.099777557,[0;0m
+[1;32m[actor/0]                 episode_write_wall_time_s=4.363454661,[0;0m
+[1;32m[actor/0]                 is_hindsight_replay=0,[0;0m
+[1;32m[actor/0]                 network_step=0)[0;0m
+[1;32m[actor/0] I1127 21:24:00.815259 137383785056064 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 58 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 48 items are waiting to be sent and 11 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 39 items are waiting to be sent and 21 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;[1;33m[actor/4] I1127 21:22:36.840337 137916905133888 node.py:62] Reverb client connecting to: localhost:42935[0;0m
+[1;33m[actor/4] I1127 21:22:39.364221 137916905133888 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;33m[actor/4] I1127 21:22:39.365397 137916905133888 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;33m[actor/4] I1127 21:22:39.373515 137916905133888 courier_utils.py:50] Binding: run[0;0m
+[1;33m[actor/4] I1127 21:22:43.765966 137916905133888 actor.py:585] Actor 4 started[0;0m
+[1;33m[actor/4] I1127 21:23:35.870462 137916905133888 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;33m[actor/4] I1127 21:23:44.184013 137916905133888 actor.py:658] Actor 4: Episode 1 done (random=1)[0;0m
+[1;33m[actor/4] I1127 21:23:44.184534 137916905133888 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;33m[actor/4]                 total_reward=-1.6875,[0;0m
+[1;33m[actor/4]                 total_collision_penalty=1.6875,[0;0m
+[1;33m[actor/4]                 total_collision_robot_steps=54,[0;0m
+[1;33m[actor/4]                 total_mean_acceleration=74.5160887718201,[0;0m
+[1;33m[actor/4]                 num_targets_done=0,[0;0m
+[1;33m[actor/4]                 episode_length=121,[0;0m
+[1;33m[actor/4]                 env_sampling_time_s=51.743106728,[0;0m
+[1;33m[actor/4]                 episode_wall_time_s=2.732434988,[0;0m
+[1;33m[actor/4]                 episode_write_wall_time_s=0.0,[0;0m
+[1;33m[actor/4]                 is_hindsight_replay=0,[0;0m
+[1;33m[actor/4]                 network_step=0)[0;0m
+[1;33m[actor/4] I1127 21:23:46.357605 137916905133888 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;33m[actor/4] I1127 21:23:52.346268 137916905133888 actor.py:658] Actor 4: Episode 2 done (random=1)[0;0m
+[1;33m[actor/4] I1127 21:23:52.346652 137916905133888 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;33m[actor/4]                 total_reward=-1.34375,[0;0m
+[1;33m[actor/4]                 total_collision_penalty=1.34375,[0;0m
+[1;33m[actor/4]                 total_collision_robot_steps=43,[0;0m
+[1;33m[actor/4]                 total_mean_acceleration=76.80387973785399,[0;0m
+[1;33m[actor/4]                 num_targets_done=0,[0;0m
+[1;33m[actor/4]                 episode_length=121,[0;0m
+[1;33m[actor/4]                 env_sampling_time_s=1.974881762,[0;0m
+[1;33m[actor/4]                 episode_wall_time_s=1.881330026,[0;0m
+[1;33m[actor/4]                 episode_write_wall_time_s=5.622281425,[0;0m
+[1;33m[actor/4]                 is_hindsight_replay=0,[0;0m
+[1;33m[actor/4]                 network_step=0)[0;0m
+[1;33m[actor/4] I1127 21:23:54.293270 137916905133888 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;33m[actor/4] I1127 21:24:01.326935 137916905133888 actor.py:658] Actor 4: Episode 3 done (random=1)[0;0m
+[1;33m[actor/4] I1127 21:24:01.327394 137916905133888 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;33m[actor/4]                 total_reward=-0.6875,[0;0m
+[1;33m[actor/4]                 total_collision_penalty=0.6875,[0;0m
+[1;33m[actor/4]                 total_collision_robot_steps=22,[0;0m
+[1;33m[actor/4]                 total_mean_acceleration=77.74898676872256,[0;0m
+[1;33m[actor/4]                 num_targets_done=0,[0;0m
+[1;33m[actor/4]                 episode_length=121,[0;0m
+[1;33m[actor/4]                 env_sampling_time_s=1.784050847,[0;0m
+[1;33m[actor/4]                 episode_wall_time_s=1.64685982,[0;0m
+[1;33m[actor/4]                 episode_write_wall_time_s=4.167220466,[0;0m
+[1;33m[actor/4]                 is_hindsight_replay=0,[0;0m
+[1;33m[actor/4]                 network_step=0)[0;0m
+[1;33m[actor/4] I1127 21:24:03.318961 137916905133888 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;33m[actor/4] I1127 21:24:10.911788 13[1;35m[actor/2] I1127 21:22:36.856048 124815975913280 node.py:62] Reverb client connecting to: localhost:42935[0;0m
+[1;35m[actor/2] I1127 21:22:39.359521 124815975913280 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;35m[actor/2] I1127 21:22:39.360830 124815975913280 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;35m[actor/2] I1127 21:22:39.368637 124815975913280 courier_utils.py:50] Binding: run[0;0m
+[1;35m[actor/2] I1127 21:22:44.358381 124815975913280 actor.py:585] Actor 2 started[0;0m
+[1;35m[actor/2] 2025-11-27 21:24:11.486379: W external/tsl/tsl/framework/bfc_allocator.cc:485] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.0KiB (rounded to 2048)requested by op [0;0m
+[1;35m[actor/2] 2025-11-27 21:24:11.486628: W external/tsl/tsl/framework/bfc_allocator.cc:497] ****************************************************************************************************[0;0m
+[1;35m[actor/2] Fatal Python error: Segmentation fault[0;0m
+[1;35m[actor/2] [0;0m
+[1;35m[actor/2] Current thread 0x00007183e6c206c0 (most recent call first):[0;0m
+[1;35m[actor/2]   <no Python frame>[0;0m
+[1;35m[actor/2] [0;0m
+[1;35m[actor/2] Thread 0x00007184fbe81740 (most recent call first):[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/threading.py", line 324 in wait[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/concurrent/futures/_base.py", line 453 in result[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 559 in _fetch_network_variables[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 224 in run_episode[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/roboballet/agents/actor.py", line 603 in run[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/courier/node.py", line 130 in run[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/node.py", line 75 in _construct_function[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 121 in main[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 254 in _run_main[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/absl/app.py", line 308 in run[0;0m
+[1;35m[actor/2]   File "/home/juliecandoit98/miniconda3/envs/roboballet/lib/python3.10/site-packages/launchpad/nodes/python/process_entry.py", line 126 in <module>[0;0m
+[1;35m[actor/2] [0;0m
+[1;35m[actor/2] Extension modules: psutil._psutil_linux, psutil._psutil_posix, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, google.protobuf.pyext._message, tensorflow.python.framework.fast_tensor_util, charset_normalizer.md, requests.packages.charset_normalizer.md, requests.packages.chardet.md, h5py._errors, h5py.defs, h5py._objects, h5py.h5, h5py.utils, h5py.h5t, h5py.h5s, h5py.h5ac, h5py.h5p, h5py.h5r, h5py._proxy, h5py._conv, h5py.h5z, h5py.h5a, h5py.h5d, h5py.h5ds, h5py.h5g, h5py.h5i, h5py.h5o, h5py.h5f, h5py.h5fd, h5py.h5pl, h5py.h5l, h5py._selector, scipy._lib._ccallback_c, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._flinalg, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_sqrtm_triu, scipy.linalg.cython_blas, scipy.linalg._matfuncs_expm, scipy.linalg._decomp_update, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpack, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, jaxlib.cpu_feature_guard, scipy.ndimage._nd_image, scipy.special._ufuncs_cxx, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.special._ellip_harm_2, _ni_label, scipy.ndimage._ni_label, msgpack._cmsgpack, yaml._yaml, scipy.spatial._ckdtree, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._distance_wrap, scipy.spatial._hausdorff, scipy.spatial.transform._rotation (total: 86)[0;0m
+32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 30 items are waiting to be sent and 31 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 21 items are waiting to be sent and 41 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 12 items are waiting to be sent and 51 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 5 items are waiting to be sent and 61 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] I1127 21:24:09.609746 137383785056064 actor.py:658] Actor 0: Episode 3 done (random=1)[0;0m
+[1;32m[actor/0] I1127 21:24:09.610087 137383785056064 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;32m[actor/0]                 total_reward=-2.0625,[0;0m
+[1;32m[actor/0]                 total_collision_penalty=2.0625,[0;0m
+[1;32m[actor/0]                 total_collision_robot_steps=66,[0;0m
+[1;32m[actor/0]                 total_mean_acceleration=74.3887170314789,[0;0m
+[1;32m[actor/0]                 num_targets_done=0,[0;0m
+[1;32m[actor/0]                 episode_length=121,[0;0m
+[1;32m[actor/0]                 env_sampling_time_s=1.911106668,[0;0m
+[1;32m[actor/0]                 episode_wall_time_s=2.804508033,[0;0m
+[1;32m[actor/0]                 episode_write_wall_time_s=5.261752269,[0;0m
+[1;32m[actor/0]                 is_hindsight_replay=0,[0;0m
+[1;32m[actor/0]                 network_step=0)[0;0m
+[1;32m[actor/0] I1127 21:24:11.048686 137383785056064 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/0] I1127 21:24:18.604890 137383785056064 actor.py:658] Actor 0: Episode 4 done (random=1)[0;0m
+[1;32m[actor/0] I1127 21:24:18.605251 137383785056064 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;32m[actor/0]                 total_reward=-0.78125,[0;0m
+[1;32m[actor/0]                 total_collision_penalty=0.78125,[0;0m
+[1;32m[actor/0]                 total_collision_robot_steps=25,[0;0m
+[1;32m[actor/0]                 total_mean_acceleration=77.25004053115843,[0;0m
+[1;32m[actor/0]                 num_targets_done=0,[0;0m
+[1;32m[actor/0]                 episode_length=121,[0;0m
+[1;32m[actor/0]                 env_sampling_time_s=1.283512192,[0;0m
+[1;32m[actor/0]                 episode_wall_time_s=1.870907204,[0;0m
+[1;32m[actor/0]                 episode_write_wall_time_s=6.058064074,[0;0m
+[1;32m[actor/0]                 is_hindsight_replay=0,[0;0m
+[1;32m[actor/0]                 network_step=0)[0;0m
+[1;32m[actor/0] I1127 21:24:20.592962 137383785056064 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/0] I1127 21:24:28.436380 137383785056064 actor.py:658] Actor 0: Episode 5 done (random=1)[0;0m
+[1;32m[actor/0] I1127 21:24:28.436735 137383785056064 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;32m[actor/0]                 total_reward=-4.03125,[0;0m
+[1;32m[actor/0]                 total_collision_penalty=4.03125,[0;0m
+[1;32m[actor/0]                 total_collision_robot_steps=129,[0;0m
+[1;32m[actor/0]                 total_mean_accelera[1;32m[actor/5] I1127 21:22:36.514735 136858047858496 node.py:62] Reverb client connecting to: localhost:42935[0;0m
+[1;32m[actor/5] I1127 21:22:38.956815 136858047858496 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;32m[actor/5] I1127 21:22:38.957844 136858047858496 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;32m[actor/5] I1127 21:22:38.964636 136858047858496 courier_utils.py:50] Binding: run[0;0m
+[1;32m[actor/5] I1127 21:22:41.853641 136858047858496 actor.py:585] Actor 5 started[0;0m
+[1;32m[actor/5] I1127 21:23:58.398271 136858047858496 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/5] I1127 21:24:07.133857 136858047858496 actor.py:658] Actor 5: Episode 1 done (random=1)[0;0m
+[1;32m[actor/5] I1127 21:24:07.134116 136858047858496 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;32m[actor/5]                 total_reward=-1.125,[0;0m
+[1;32m[actor/5]                 total_collision_penalty=1.125,[0;0m
+[1;32m[actor/5]                 total_collision_robot_steps=36,[0;0m
+[1;32m[actor/5]                 total_mean_acceleration=77.20976467132566,[0;0m
+[1;32m[actor/5]                 num_targets_done=0,[0;0m
+[1;32m[actor/5]                 episode_length=121,[0;0m
+[1;32m[actor/5]                 env_sampling_time_s=76.183746662,[0;0m
+[1;32m[actor/5]                 episode_wall_time_s=3.11655785,[0;0m
+[1;32m[actor/5]                 episode_write_wall_time_s=0.0,[0;0m
+[1;32m[actor/5]                 is_hindsight_replay=0,[0;0m
+[1;32m[actor/5]                 network_step=0)[0;0m
+[1;32m[actor/5] I1127 21:24:08.445480 136858047858496 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/5] I1127 21:24:16.421445 136858047858496 actor.py:658] Actor 5: Episode 2 done (random=1)[0;0m
+[1;32m[actor/5] I1127 21:24:16.421871 136858047858496 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;32m[actor/5]                 total_reward=-2.21875,[0;0m
+[1;32m[actor/5]                 total_collision_penalty=2.21875,[0;0m
+[1;32m[actor/5]                 total_collision_robot_steps=71,[0;0m
+[1;32m[actor/5]                 total_mean_acceleration=74.60461089611051,[0;0m
+[1;32m[actor/5]                 num_targets_done=0,[0;0m
+[1;32m[actor/5]                 episode_length=121,[0;0m
+[1;32m[actor/5]                 env_sampling_time_s=1.162824375,[0;0m
+[1;32m[actor/5]                 episode_wall_time_s=2.350609488,[0;0m
+[1;32m[actor/5]                 episode_write_wall_time_s=5.683101522,[0;0m
+[1;32m[actor/5]                 is_hindsight_replay=0,[0;0m
+[1;32m[actor/5]                 network_step=0)[0;0m
+[1;32m[actor/5] I1127 21:24:18.314970 136858047858496 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/5] I1127 21:24:26.593288 136858047858496 actor.py:658] Actor 5: Episode 3 done (random=1)[0;0m
+[1;32m[actor/5] I1127 21:24:26.593585 136858047858496 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;32m[actor/5]                 total_reward=-0.96875,[0;0m
+[1;32m[actor/5]                 total_collision_penalty=0.96875,[0;0m
+[1;32m[actor/5]                 total_collision_robot_steps=31,[0;0m
+[1;32m[actor/5]                 total_mean_acceleration=76.13036475181582,[0;0m
+[1;32m[actor/5]                 num_targets_done=0,[0;0m
+[1;32m[actor/5]                 episode_length=121,[0;0m
+[1;32m[actor/5]                 env_sampling_time_s=1.737429946,[0;0m
+[1;32m[actor/5]                 episode_wall_time_s=2.506723536,[0;0m
+[1;32m[actor/5]                 episode_write_wall_time_s=5.669223839,[0;0m
+[1;32m[actor/5]                 is_hindsight_replay=0,[0;0m
+[1;32m[actor/5]                 network_step=0)[0;0m
+[1;32m[actor/5] I1127 21:24:27.935490 136858047858496 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 103 items are waiting to be sent and 2 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 95 items are waiting to be sent and 11 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 85 items are waiting to be sent and 21 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 75 items are waiting to be sent and 31 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 65 items are waiting to be sent and 41 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 55 items are waiting to be sent and 51 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 45 items are waiting to be sent and 61 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 36 items are waiting to be sent and 71 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 26 items are waiting to be sent and 81 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 16 items are waiting to be sent and 91 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 7 items are waiting to be sent and 101 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] T[1;33m[learner/0] I1127 21:22:37.005581 135397849802560 __init__.py:71] Failed to apply nest_asyncio. Received error: no running event loop[0;0m
+[1;33m[learner/0] I1127 21:22:37.120953 135397849802560 node.py:62] Reverb client connecting to: localhost:42935[0;0m
+[1;33m[learner/0] I1127 21:22:39.368138 135397849802560 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;33m[learner/0] I1127 21:22:39.369294 135397849802560 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;33m[learner/0] I1127 21:22:39.376911 135397849802560 train.py:600] TensorBoard log dir: ./tensorboard_log[0;0m
+[1;33m[learner/0] I1127 21:23:15.525599 135397849802560 courier_utils.py:50] Binding: get_policy_variables[0;0m
+[1;33m[learner/0] I1127 21:23:15.525820 135397849802560 courier_utils.py:50] Binding: run[0;0m
+[1;33m[learner/0] I1127 21:23:15.526510 135397849802560 train.py:706] Learner 0 started[0;0m
+[1;33m[learner/0] I1127 21:23:15.686788 135397849802560 train.py:730] Learner 0: Waiting for first sample[0;0m
+[1;33m[learner/0] I1127 21:23:22.776030 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:25.472266 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:35.659533 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:42.992779 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:45.560540 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:46.160783 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:47.399510 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:48.075881 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:51.111221 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:54.131809 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:23:58.180949 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:00.530304 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:00.852032 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:01.286151 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:03.161549 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:08.297745 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:10.894618 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:11.154890 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:12.871496 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:18.160466 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:20.422943 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:21.150607 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:22.508330 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:27.766667 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:30.591126 135385165981376 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:31.749550 135381991253696 train.py:692] Client fetched network step: 0[0;0m
+[1;33m[learner/0] I1127 21:24:31.846718 135[1;36m[replay/0] I1127 21:22:38.564042 128694321993536 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;36m[replay/0] I1127 21:22:38.565212 128694321993536 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;36m[replay/0] [reverb/cc/platform/tfrecord_checkpointer.cc:150]  Initializing TFRecordCheckpointer in /tmp/tmpfplfh4eg.[0;0m
+[1;36m[replay/0] [reverb/cc/platform/tfrecord_checkpointer.cc:386] Loading latest checkpoint from /tmp/tmpfplfh4eg[0;0m
+[1;36m[replay/0] [reverb/cc/platform/default/server.cc:71] Started replay server on port 42935[0;0m
+[1;36m[replay/0] Waiting for workers to stop for 10s.[reverb/cc/platform/default/server.cc:84] Shutting down replay server[0;0m
+7916905133888 actor.py:658] Actor 4: Episode 4 done (random=1)[0;0m
+[1;33m[actor/4] I1127 21:24:10.912208 137916905133888 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;33m[actor/4]                 total_reward=-2.875,[0;0m
+[1;33m[actor/4]                 total_collision_penalty=2.875,[0;0m
+[1;33m[actor/4]                 total_collision_robot_steps=92,[0;0m
+[1;33m[actor/4]                 total_mean_acceleration=71.574693775177,[0;0m
+[1;33m[actor/4]                 num_targets_done=0,[0;0m
+[1;33m[actor/4]                 episode_length=121,[0;0m
+[1;33m[actor/4]                 env_sampling_time_s=1.833105993,[0;0m
+[1;33m[actor/4]                 episode_wall_time_s=3.021122228,[0;0m
+[1;33m[actor/4]                 episode_write_wall_time_s=5.387049237,[0;0m
+[1;33m[actor/4]                 is_hindsight_replay=0,[0;0m
+[1;33m[actor/4]                 network_step=0)[0;0m
+[1;33m[actor/4] I1127 21:24:13.022629 137916905133888 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;33m[actor/4] I1127 21:24:20.814309 137916905133888 actor.py:658] Actor 4: Episode 5 done (random=1)[0;0m
+[1;33m[actor/4] I1127 21:24:20.814538 137916905133888 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;33m[actor/4]                 total_reward=-1.40625,[0;0m
+[1;33m[actor/4]                 total_collision_penalty=1.40625,[0;0m
+[1;33m[actor/4]                 total_collision_robot_steps=45,[0;0m
+[1;33m[actor/4]                 total_mean_acceleration=74.4297268152237,[0;0m
+[1;33m[actor/4]                 num_targets_done=0,[0;0m
+[1;33m[actor/4]                 episode_length=121,[0;0m
+[1;33m[actor/4]                 env_sampling_time_s=1.958255344,[0;0m
+[1;33m[actor/4]                 episode_wall_time_s=2.787133567,[0;0m
+[1;33m[actor/4]                 episode_write_wall_time_s=4.578320798,[0;0m
+[1;33m[actor/4]                 is_hindsight_replay=0,[0;0m
+[1;33m[actor/4]                 network_step=0)[0;0m
+[1;33m[actor/4] I1127 21:24:22.751540 137916905133888 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;33m[actor/4] I1127 21:24:30.615449 137916905133888 actor.py:658] Actor 4: Episode 6 done (random=1)[0;0m
+[1;33m[actor/4] I1127 21:24:30.615718 137916905133888 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;33m[actor/4]                 total_reward=-2.28125,[0;0m
+[1;33m[actor/4]                 total_collision_penalty=2.28125,[0;0m
+[1;33m[actor/4]                 total_collision_robot_steps=73,[0;0m
+[1;33m[actor/4]                 total_mean_acceleration=74.02902953624726,[0;0m
+[1;33m[actor/4]                 num_targets_done=0,[0;0m
+[1;33m[actor/4]                 episode_length=121,[0;0m
+[1;33m[actor/4]                 env_sampling_time_s=1.692943559,[0;0m
+[1;33m[actor/4]                 episode_wall_time_s=2.547353893,[0;0m
+[1;33m[actor/4]                 episode_write_wall_time_s=4.952749458,[0;0m
+[1;33m[actor/4]                 is_hindsight_replay=0,[0;0m
+[1;33m[actor/4]                 network_step=0)[0;0m
+[1;33m[actor/4] I1127 21:24:32.029548 137916905133888 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;33m[actor/4] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 83 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;33m[actor/4] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 73 items are waiting to be sent and 11 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;33m[actor/4] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 63 items are waiting to be sent and 21 items have been [1;34m[actor/1] I1127 21:22:36.783982 128796046411584 node.py:62] Reverb client connecting to: localhost:42935[0;0m
+[1;34m[actor/1] I1127 21:22:39.349921 128796046411584 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA[0;0m
+[1;34m[actor/1] I1127 21:22:39.350845 128796046411584 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0;0m
+[1;34m[actor/1] I1127 21:22:39.356169 128796046411584 courier_utils.py:50] Binding: run[0;0m
+[1;34m[actor/1] I1127 21:22:43.399014 128796046411584 actor.py:585] Actor 1 started[0;0m
+[1;34m[actor/1] I1127 21:24:01.274713 128796046411584 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;34m[actor/1] I1127 21:24:09.516450 128796046411584 actor.py:658] Actor 1: Episode 1 done (random=1)[0;0m
+[1;34m[actor/1] I1127 21:24:09.516834 128796046411584 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;34m[actor/1]                 total_reward=-1.59375,[0;0m
+[1;34m[actor/1]                 total_collision_penalty=1.59375,[0;0m
+[1;34m[actor/1]                 total_collision_robot_steps=51,[0;0m
+[1;34m[actor/1]                 total_mean_acceleration=76.18654522895811,[0;0m
+[1;34m[actor/1]                 num_targets_done=0,[0;0m
+[1;34m[actor/1]                 episode_length=121,[0;0m
+[1;34m[actor/1]                 env_sampling_time_s=77.220336349,[0;0m
+[1;34m[actor/1]                 episode_wall_time_s=3.214732402,[0;0m
+[1;34m[actor/1]                 episode_write_wall_time_s=0.0,[0;0m
+[1;34m[actor/1]                 is_hindsight_replay=0,[0;0m
+[1;34m[actor/1]                 network_step=0)[0;0m
+[1;34m[actor/1] I1127 21:24:11.316651 128796046411584 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;34m[actor/1] I1127 21:24:19.567951 128796046411584 actor.py:658] Actor 1: Episode 2 done (random=1)[0;0m
+[1;34m[actor/1] I1127 21:24:19.568346 128796046411584 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;34m[actor/1]                 total_reward=-1.21875,[0;0m
+[1;34m[actor/1]                 total_collision_penalty=1.21875,[0;0m
+[1;34m[actor/1]                 total_collision_robot_steps=39,[0;0m
+[1;34m[actor/1]                 total_mean_acceleration=77.39394221305847,[0;0m
+[1;34m[actor/1]                 num_targets_done=0,[0;0m
+[1;34m[actor/1]                 episode_length=121,[0;0m
+[1;34m[actor/1]                 env_sampling_time_s=1.63664312,[0;0m
+[1;34m[actor/1]                 episode_wall_time_s=2.826431479,[0;0m
+[1;34m[actor/1]                 episode_write_wall_time_s=5.270797142,[0;0m
+[1;34m[actor/1]                 is_hindsight_replay=0,[0;0m
+[1;34m[actor/1]                 network_step=0)[0;0m
+[1;34m[actor/1] I1127 21:24:21.338372 128796046411584 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;34m[actor/1] I1127 21:24:29.827696 128796046411584 actor.py:658] Actor 1: Episode 3 done (random=1)[0;0m
+[1;34m[actor/1] I1127 21:24:29.828078 128796046411584 actor.py:662] TrajectoryStats(final_score=0.0,[0;0m
+[1;34m[actor/1]                 total_reward=-0.71875,[0;0m
+[1;34m[actor/1]                 total_collision_penalty=0.71875,[0;0m
+[1;34m[actor/1]                 total_collision_robot_steps=23,[0;0m
+[1;34m[actor/1]                 total_mean_acceleration=78.24666051864628,[0;0m
+[1;34m[actor/1]                 num_targets_done=0,[0;0m
+[1;34m[actor/1]                 episode_length=121,[0;0m
+[1;34m[actor/1]                 env_sampling_time_s=1.581177201,[0;0m
+[1;34m[actor/1]                 episode_wall_time_s=2.563054116,[0;0m
+[1;34m[actor/1]                 episode_write_wall_time_s=5.335215862,[0;0m
+[1;34m[actor/1]                 is_hindsight_replay=0,[0;0m
+[1;34m[actor/1]                 network_step=0)[0;0m
+[1;34m[actor/1] I1127 21:24:31.951978 128796046411584 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;34m[actor/1] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 104 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;34m[actor/1] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 104 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;34m[actor/1] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 104 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+385165981376 train.py:692] Client fetched network step: 0[0;0m
+he number of pending items is alarmingly high, did you forget to call Flush? 0 items are waiting to be sent and 111 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 119 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/5] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 119 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;33m[actor/4] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 53 items are waiting to be sent and 31 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;33m[actor/4] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 43 items are waiting to be sent and 41 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;33m[actor/4] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 83 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;33m[actor/4] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 83 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+tion=67.2647150039673,[0;0m
+[1;32m[actor/0]                 num_targets_done=0,[0;0m
+[1;32m[actor/0]                 episode_length=121,[0;0m
+[1;32m[actor/0]                 env_sampling_time_s=1.816809811,[0;0m
+[1;32m[actor/0]                 episode_wall_time_s=2.421355696,[0;0m
+[1;32m[actor/0]                 episode_write_wall_time_s=5.644739361,[0;0m
+[1;32m[actor/0]                 is_hindsight_replay=0,[0;0m
+[1;32m[actor/0]                 network_step=0)[0;0m
+[1;32m[actor/0] I1127 21:24:30.733785 137383785056064 actor.py:567] Fetched policy net params (step 0)[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 63 items are waiting to be sent and 4 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 53 items are waiting to be sent and 14 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 43 items are waiting to be sent and 24 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 117 items are waiting to be sent and 3 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 107 items are waiting to be sent and 13 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 97 items are waiting to be sent and 23 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 87 items are waiting to be sent and 33 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 119 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m
+[1;32m[actor/0] [reverb/cc/trajectory_writer.cc:653] The number of pending items is alarmingly high, did you forget to call Flush? 119 items are waiting to be sent and 1 items have been sent to the server but haven't been confirmed yet. It is important to call Flush regularly as large numbers of pending items can result in OOM crashes on both client and server.[0;0m

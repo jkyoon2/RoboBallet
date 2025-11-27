@@ -1,0 +1,81 @@
+// Copyright 2025 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+// ==============================================================================
+
+syntax = "proto3";
+
+message NDArray {
+  repeated int32 dims = 1;
+  string dtype = 2;
+  repeated float float_values = 3;
+  repeated double double_values = 4;
+  repeated int64 int64_values = 5;
+}
+
+message BoxInfo {
+  NDArray spans = 1;
+  NDArray centroid = 2;
+  NDArray rotation = 3;
+}
+
+message TargetSet {
+  repeated TargetInfo targets = 1;
+}
+
+message TargetInfo {
+  NDArray position = 1;
+  NDArray rotation = 2;
+}
+
+message PredefinedTasks {
+  string world_path = 1;
+  repeated TargetSet target_sets = 2;
+}
+
+message StartState {
+  repeated BoxInfo generated_obstacles = 1;
+  repeated TargetInfo targets = 2;
+  NDArray initial_joint_configurations = 3;
+  NDArray initial_robot_placements = 4;
+}
+
+message StartStates {
+  repeated StartState start_states = 1;
+}
+
+// A PyTree is a potentially nested dictionary where each leaf is a NDArray.
+// An entry can either be a PyTree or an NDArray.
+message PyTreeEntry {
+  oneof entry_type {
+    PyTree subtree = 1;
+    NDArray value = 2;
+  }
+}
+
+message PyTree {
+  repeated string keys = 1;
+  repeated PyTreeEntry entries = 2;
+}
+
+// Transitions for TD3 training (s, a, r, s', terminal).
+message Transition {
+  // To avoid needing to construct an environment to get the observation/action
+  // specs (which contains min and max for each component arrays) at training
+  // time, we store them pre-scaled from [min, max] to [-1, 1].
+  PyTree scaled_observation = 1;
+  NDArray scaled_action = 2;
+  PyTree scaled_next_observation = 3;
+  float reward = 4;
+  bool is_terminal = 5;
+}
