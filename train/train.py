@@ -104,7 +104,7 @@ class TrainConfig(struct.PyTreeNode):
   twin_critic_learning_rate_decay_rate: float = 0.95
   train_steps: int = 20_000_000
   max_train_time_s: int | None = None
-  train_batch_size: int = 8 if _DEBUG_MODE else 64
+  train_batch_size: int = 8 if _DEBUG_MODE else 32
   checkpoint_interval: int = 10000
   stats_reporting_interval: int = 1000
   fused_training_steps: int = 20

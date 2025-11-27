@@ -20,6 +20,12 @@ import dataclasses
 import getpass
 import os
 from typing import Any
+import multiprocessing
+
+try:
+    multiprocessing.set_start_method('spawn', force=True)
+except RuntimeError:
+    pass
 
 from absl import app
 from absl import flags
@@ -38,6 +44,7 @@ from agents import compute_features
 from agents import evaluator
 from agents import networks
 from environments import planning_env
+from launch import cpu_node_wrappers
 from launch import hparams
 from launch import launch_utils
 from train import stats
@@ -45,7 +52,7 @@ from train import train
 
 FLAGS = flags.FLAGS
 
-_NUM_ACTORS = flags.DEFINE_integer('num_actors', 1,
+_NUM_ACTORS = flags.DEFINE_integer('num_actors', 2,
                                    'Number of actors (for local runs only)')
 _NUM_TARGETS = flags.DEFINE_integer('num_targets', 10, 'Number of targets')
 _NUM_OBSTACLES = flags.DEFINE_integer(
@@ -158,6 +165,57 @@ def _restore_checkpoint_path(
   return f'{_RESTORE_CHECKPOINT.value}/model_checkpoints/{step}'
 
 
+def make_policy_network_factory(model_config_dict: dict):
+  """Creates a factory function for policy network.
+  
+  This factory function is passed to CPU nodes instead of the network object.
+  The network is created AFTER JAX is configured for CPU-only, preventing
+  GPU memory allocation.
+  
+  IMPORTANT: We pass a plain dict instead of a Flax struct to avoid triggering
+  JAX imports during unpickling.
+  
+  Args:
+    model_config_dict: The model configuration as a plain dictionary.
+    
+  Returns:
+    A callable that creates and returns the policy network.
+  """
+  def factory():
+    # Import inside factory to ensure JAX is configured before import
+    from agents import networks as agent_networks
+    from agents import compute_features
+    
+    # Make a copy to avoid modifying the original
+    config_dict = dict(model_config_dict)
+    
+    # Reconstruct nested configs from dicts
+    feature_config_dict = config_dict.pop('feature_config', {})
+    feature_config = compute_features.FeatureConfig(**feature_config_dict)
+    
+    # Reconstruct the model config
+    model_config = agent_networks.ModelConfig(
+        feature_config=feature_config,
+        **config_dict
+    )
+    return agent_networks.RoboBalletPolicyNet(config=model_config)
+  return factory
+
+
+def config_to_dict(config) -> dict:
+  """Convert a Flax struct config to a plain dictionary recursively."""
+  import dataclasses
+  result = {}
+  for field in dataclasses.fields(config):
+    value = getattr(config, field.name)
+    # Check if it's another config/struct with fields
+    if dataclasses.is_dataclass(value):
+      result[field.name] = config_to_dict(value)
+    else:
+      result[field.name] = value
+  return result
+
+
 def make_program(
     configs: hparams.LaunchConfigs,
     checkpoint_dir: str | None,
@@ -205,10 +263,16 @@ def make_program(
       )
       replay_handle = program.add_node(replay_node)
 
+    # Create network objects for learner (runs on GPU)
     policy_network = networks.RoboBalletPolicyNet(config=configs.model_config)
     twin_critic_network = networks.RoboBalletTwinCriticNet(
         config=configs.model_config
     )
+    
+    # Create factory function for CPU nodes (network created after CPU config)
+    # Convert config to plain dict to avoid Flax/JAX imports during unpickling
+    model_config_dict = config_to_dict(configs.model_config)
+    policy_network_factory = make_policy_network_factory(model_config_dict)
 
     with program.group('learner'):
       learner_handle = program.add_node(
@@ -231,10 +295,10 @@ def make_program(
       for actor_id in range(configs.actor_config.num_actors):
         program.add_node(
             lp.CourierNode(
-                actor.ActorNode,
+                cpu_node_wrappers.CPUActorNode,
                 actor_config=configs.actor_config,
                 env_config=configs.env_config,
-                network=policy_network,
+                network_factory=policy_network_factory,
                 actor_id=actor_id,
                 reverb_client=replay_handle,
                 learner_client=learner_handle
@@ -246,11 +310,11 @@ def make_program(
     with program.group('evaluator'):
       program.add_node(
           lp.CourierNode(
-              evaluator.EvaluatorNode,
+              cpu_node_wrappers.CPUEvaluatorNode,
               evaluator_config=configs_for_eval.eval_config,
               actor_config=configs_for_eval.actor_config,
               env_config=configs_for_eval.env_config,
-              network=policy_network,
+              network_factory=policy_network_factory,
               evaluator_name='training_dist',
               learner_client=learner_handle,
               tensorboard_log_dir=tensorboard_log_dir
@@ -268,11 +332,11 @@ def make_program(
         )
         program.add_node(
             lp.CourierNode(
-                evaluator.EvaluatorNode,
+                cpu_node_wrappers.CPUEvaluatorNode,
                 evaluator_config=configs_for_static_eval.eval_config,
                 actor_config=configs_for_static_eval.actor_config,
                 env_config=configs_for_static_eval.env_config,
-                network=policy_network,
+                network_factory=policy_network_factory,
                 evaluator_name='static_dist',
                 learner_client=learner_handle,
                 tensorboard_log_dir=tensorboard_log_dir
