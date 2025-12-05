@@ -52,7 +52,7 @@ from train import train
 
 FLAGS = flags.FLAGS
 
-_NUM_ACTORS = flags.DEFINE_integer('num_actors', 2,
+_NUM_ACTORS = flags.DEFINE_integer('num_actors', 1,
                                    'Number of actors (for local runs only)')
 _NUM_TARGETS = flags.DEFINE_integer('num_targets', 10, 'Number of targets')
 _NUM_OBSTACLES = flags.DEFINE_integer(

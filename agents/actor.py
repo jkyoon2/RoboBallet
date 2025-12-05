@@ -462,12 +462,15 @@ def _write_episode(
       terminal_action_idx = num_actions - 1
       for t in range(num_observations):
         data = {}
-        features = compute_features.make_graph_features(
-            trajectory.observations[t], observation_spec, feature_config)
+        # Ensure features are computed on CPU and converted to numpy to avoid GPU memory usage
+        with jax.default_device(jax.devices('cpu')[0]):
+          features = compute_features.make_graph_features(
+              trajectory.observations[t], observation_spec, feature_config)
+        # Convert JAX arrays to numpy to ensure they're on CPU and not using GPU memory
         data['observation'] = {
-            'nodes': features.nodes,
-            'edges': features.edges,
-            'globals': features.globals,
+            'nodes': np.asarray(features.nodes),
+            'edges': np.asarray(features.edges),
+            'globals': np.asarray(features.globals),
         }
 
         if t < last_observation_idx:
@@ -486,6 +489,8 @@ def _write_episode(
 
       # The final observation doesn't get its own item, but is used as
       # observation_next for the last item.
+      # Flush periodically during item creation to prevent memory buildup
+      flush_interval = 30  # Flush every 30 items to prevent pending items from accumulating
       for t in range(num_actions):
         observation = (
             {
@@ -517,7 +522,11 @@ def _write_episode(
                 'terminal': writer.history['terminal'][t],
             },
         )
+        # Periodically flush to prevent pending items from accumulating
+        if (t + 1) % flush_interval == 0:
+          writer.flush()
       writer.end_episode()
+      writer.flush()  # Final flush to ensure all data is sent to server
   except RuntimeError as e:
     logging.warning('Failed to write episode: %s. This is normal during shut '
                     'down', str(e))

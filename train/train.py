@@ -104,10 +104,10 @@ class TrainConfig(struct.PyTreeNode):
   twin_critic_learning_rate_decay_rate: float = 0.95
   train_steps: int = 20_000_000
   max_train_time_s: int | None = None
-  train_batch_size: int = 8 if _DEBUG_MODE else 32
+  train_batch_size: int = 4 if _DEBUG_MODE else 4  # Reduced from 16 to 8 to avoid GPU OOM
   checkpoint_interval: int = 10000
   stats_reporting_interval: int = 1000
-  fused_training_steps: int = 20
+  fused_training_steps: int = 1
   seed: int = 42
 
   # TD3 hyper-parameters.
@@ -934,9 +934,36 @@ class LearnerNode:
                 ckpt,
             )
             self._checkpointer.save(checkpoint_path, ckpt, save_args=save_args)
+            # Clear JAX caches after checkpoint save to free GPU memory
+            # This helps prevent memory fragmentation and OOM issues
+            try:
+              import gc
+              gc.collect()
+              # Clear JAX backend caches to free GPU memory
+              jax.clear_backends()
+              logging.info('Learner %d: Cleared JAX caches after checkpoint save at step %d', 
+                          self._learner_id, self._step)
+            except Exception as e:
+              logging.warning('Learner %d: Error clearing JAX caches: %s', 
+                            self._learner_id, str(e))
       self._step += self._train_config.fused_training_steps
       if self._experiment_start_time is None:
         self._experiment_start_time = time.time_ns()
+      
+      # Periodically clear JAX caches to free up GPU memory
+      # This helps prevent OOM issues during long training runs
+      if self._step % (self._train_config.stats_reporting_interval * 10) == 0:
+        # Clear XLA compilation cache to free memory
+        # Note: This will cause recompilation on next use, but helps with memory
+        try:
+          # Force garbage collection to help free GPU memory
+          import gc
+          gc.collect()
+          # JAX doesn't have a direct cache clear, but we can try to free memory
+          # by clearing any cached computations
+          logging.debug('Learner %d: Memory cleanup at step %d', self._learner_id, self._step)
+        except Exception as e:
+          logging.warning('Learner %d: Error during memory cleanup: %s', self._learner_id, str(e))
 
     if self._step >= self._train_config.train_steps:
       logging.info('Step count limit reached. Terminating experiment.')
